@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.streamlinx.fsc.MasterAgreementLineItemSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2014-09-06T23:23:23" hostname="transient" time="0.585">
+  <properties/>
+  <testcase name="A MasterAgreementLineItem can get the total amount that it has received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.555"/>
+  <testcase name="A MasterAgreementLineItem can determine if it has been received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.02"/>
+  <testcase name="A MasterAgreementLineItem can have many CustomerReceiptAllocations made to it" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.0080"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,29 @@
+apply plugin: "groovy"
+
+version = "1.0-SNAPSHOT"
+description = "Test Runner"
+
+repositories {
+    mavenCentral()
+    maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:1.8.8"
+    compile "cglib:cglib:2.2"
+    testCompile "org.spockframework:spock-core:1.0-groovy-1.8-SNAPSHOT"
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['../testApp/grails-app/domain']
+        }
+    }
+    test {
+        groovy {
+            srcDirs = ['../testApp/test']
+        }
+    }
+}
+

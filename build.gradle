@@ -1,7 +1,15 @@
+import org.gradle.logging.StyledTextOutput
+import org.gradle.logging.StyledTextOutputFactory
+import static org.gradle.logging.StyledTextOutput.Style
+
+def out = services.get(StyledTextOutputFactory).create("Output")
+
 apply plugin: "groovy"
 
 version = "1.0-SNAPSHOT"
 description = "Test Runner"
+
+System.setProperty('user.timezone', 'UTC')
 
 repositories {
     mavenCentral()
@@ -26,23 +34,67 @@ sourceSets {
                 '../SmartsToo2/grails-app/domain/com/streamlinx/fsc',
                 '../Blackcomb2/grails-app/domain/com/streamlinx/bcpt'
             ]
-            /*include 'MasterAgreementLineItem.groovy'*/
-            /*include 'TenantLocation.groovy'*/
-            /*include 'TenantLocationBase.groovy'*/
-            /*include 'User.groovy'*/
-            /*include 'OperationsBatch.groovy'*/
-            /*include 'MasterInvoice.groovy'*/
-            /*include 'StepTracking.groovy'*/
-            /*include 'WorkFlow.groovy'*/
-            /*include 'WorkFlowTracking.groovy'*/
-            /*include 'StepDefinition.groovy'*/
-            /*include '*/
         }
     }
     test {
         groovy {
             srcDirs = ['../SmartsToo2/spec/']
         }
+    }
+}
+
+test {
+    outputs.upToDateWhen { false }
+    beforeSuite { testDescriptor ->
+        if( testDescriptor.parent == null )
+        {
+            out.append("Initializing...").println()
+        }
+        else if( testDescriptor?.parent?.parent == null )
+        {
+            out.append("Executing...").println()
+        }
+        else
+        {
+            out.withStyle(Style.Description).append("======================> ")
+            out.withStyle(Style.UserInput).append(testDescriptor.name.toString())
+            out.println()
+        }
+    }
+
+    afterTest { testDescriptor, testResult -> 
+        String testResultString = testDescriptor.name
+        out.append("[")
+        if( testResult.failedTestCount == 0 )
+        {
+            out.withStyle(Style.Identifier).append("PASS")
+        }
+        else
+        {
+            out.withStyle(Style.Failure).append("FAIL")
+        }
+        int testDuration = testResult.endTime - testResult.startTime
+        out.append("] |").format("% 8d", testDuration).append("ms | " + testResultString).println()
+    }
+    afterSuite { testDescriptor, testResult ->
+        if( testDescriptor.parent != null )
+        {
+            int suiteDuration = testResult.endTime - testResult.startTime
+            if ( testDescriptor.parent.parent == null )
+            {
+                out.withStyle(Style.UserInput).append("Finished " + testResult.testCount + " tests in " + suiteDuration + "ms (" + testResult.failedTestCount + " failed)")
+                out.println()
+            }
+            else
+            {
+                out.append("[")
+                out.withStyle(Style.UserInput).append("DONE")
+                out.append("] |")
+                out.withStyle(Style.ProgressStatus).format("% 8d", suiteDuration)
+                out.append("ms | ")
+            }
+        }
+        out.println()
     }
 }
 

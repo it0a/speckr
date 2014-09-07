@@ -73,8 +73,20 @@ test {
         {
             out.withStyle(Style.Failure).append("FAIL")
         }
+        out.append("] |")
         int testDuration = testResult.endTime - testResult.startTime
-        out.append("] |").format("% 8d", testDuration).append("ms | " + testResultString).println()
+        if( testDuration > 75 )
+        {
+            out.withStyle(Style.Failure).format("% 8d", testDuration)        
+            out.withStyle(Style.Failure).append("ms!")
+        }
+        else
+        {
+            out.format("% 8d", testDuration)        
+            out.append("ms ")
+        }
+        out.append("| " + testResultString).println()
+
     }
     afterSuite { testDescriptor, testResult ->
         if( testDescriptor.parent != null )

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.ServiceContractSpec" tests="11" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:04:13" hostname="transient" time="0.399">
+<testsuite name="com.streamlinx.fsc.ServiceContractSpec" tests="11" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:09:56" hostname="transient" time="0.349">
   <properties/>
-  <testcase name="It can aggregate the RS Splits of it's ServiceDeliveryProfiles" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.059"/>
-  <testcase name="It can check if the RS Splits are valid" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.072"/>
-  <testcase name="It can check if the SS Splits are valid" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.066"/>
-  <testcase name="It can aggregate the RS Split Percents of it's ServiceDeliveryProfiles" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.041"/>
-  <testcase name="It can aggregate pending charges and credits" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.043"/>
-  <testcase name="We can get the ServiceContractLineItems that don't yet belong to an invoice" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.0090"/>
-  <testcase name="It can determine if it has pending on-demand line items" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.029"/>
-  <testcase name="It can determine if it has pending recurring line items" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.033"/>
-  <testcase name="It can determine if it has pending charges/credits" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.019"/>
+  <testcase name="It can aggregate the RS Splits of it's ServiceDeliveryProfiles" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.052"/>
+  <testcase name="It can check if the RS Splits are valid" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.063"/>
+  <testcase name="It can check if the SS Splits are valid" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.054"/>
+  <testcase name="It can aggregate the RS Split Percents of it's ServiceDeliveryProfiles" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.034"/>
+  <testcase name="It can aggregate pending charges and credits" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.034"/>
+  <testcase name="We can get the ServiceContractLineItems that don't yet belong to an invoice" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.0070"/>
+  <testcase name="It can determine if it has pending on-demand line items" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.024"/>
+  <testcase name="It can determine if it has pending recurring line items" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.024"/>
+  <testcase name="It can determine if it has pending charges/credits" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.025"/>
   <testcase name="We can check that a Service Contract is for regular service or not" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.0010"/>
-  <testcase name="We can check that a Service Contract has at least one Service Delivery Profile for it's Regular Service" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.018"/>
+  <testcase name="We can check that a Service Contract has at least one Service Delivery Profile for it's Regular Service" classname="com.streamlinx.fsc.ServiceContractSpec" time="0.024"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

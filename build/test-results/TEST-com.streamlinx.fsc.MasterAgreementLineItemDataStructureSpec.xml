@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.MasterAgreementLineItemDataStructureSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:04:14" hostname="transient" time="0.0080">
+<testsuite name="com.streamlinx.fsc.MasterAgreementLineItemDataStructureSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:09:57" hostname="transient" time="0.0090">
   <properties/>
-  <testcase name="It belongs to a MasterAgreement" classname="com.streamlinx.fsc.MasterAgreementLineItemDataStructureSpec" time="0.0070"/>
+  <testcase name="It belongs to a MasterAgreement" classname="com.streamlinx.fsc.MasterAgreementLineItemDataStructureSpec" time="0.0080"/>
   <testcase name="It has many CustomerReceiptAllocations" classname="com.streamlinx.fsc.MasterAgreementLineItemDataStructureSpec" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

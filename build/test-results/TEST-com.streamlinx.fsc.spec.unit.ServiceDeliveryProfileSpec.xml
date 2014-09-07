@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" tests="14" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:04:15" hostname="transient" time="0.084">
+<testsuite name="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" tests="14" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:09:58" hostname="transient" time="0.068">
   <properties/>
-  <testcase name="It can determine if it is for regular service" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0010"/>
+  <testcase name="It can determine if it is for regular service" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0"/>
   <testcase name="We can check if a ServiceDeliveryProfile is for a Special Service" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0"/>
-  <testcase name="setSplitByMonthlyCost sets the correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.016"/>
-  <testcase name="setSplitByMonthlyCost will not set a split for invalid values" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.016"/>
-  <testcase name="setSplitByMonthlyCost will not set a split for special services" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0090"/>
-  <testcase name="setSplitByCostPerService sets correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0060"/>
+  <testcase name="setSplitByMonthlyCost sets the correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.013"/>
+  <testcase name="setSplitByMonthlyCost will not set a split for invalid values" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.013"/>
+  <testcase name="setSplitByMonthlyCost will not set a split for special services" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0070"/>
+  <testcase name="setSplitByCostPerService sets correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0050"/>
   <testcase name="setSplitByCostPerService fails to set split when given less than zero" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0020"/>
-  <testcase name="setSplitByCostPerService fails to set split when the service delivery profile is not for a special service" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0030"/>
-  <testcase name="setSplitByPercent sets correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0080"/>
-  <testcase name="We shouldn't be able to setSplitByPercent for percents below 0% or above 100%" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0050"/>
-  <testcase name="getSplitByPercent returns the split in the format of the percent" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0050"/>
-  <testcase name="getSplitByPercent will always show two and only two decimal places" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0050"/>
+  <testcase name="setSplitByCostPerService fails to set split when the service delivery profile is not for a special service" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0020"/>
+  <testcase name="setSplitByPercent sets correct splitAmount" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0060"/>
+  <testcase name="We shouldn't be able to setSplitByPercent for percents below 0% or above 100%" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0040"/>
+  <testcase name="getSplitByPercent returns the split in the format of the percent" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0040"/>
+  <testcase name="getSplitByPercent will always show two and only two decimal places" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0040"/>
   <testcase name="We can get the amount that a ServiceDeliveryProfile specifies to a customer for SS type" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0020"/>
   <testcase name="We can get the amount that a ServiceDeliveryProfile specifies to a customer for RS type" classname="com.streamlinx.fsc.spec.unit.ServiceDeliveryProfileSpec" time="0.0010"/>
   <system-out><![CDATA[]]></system-out>

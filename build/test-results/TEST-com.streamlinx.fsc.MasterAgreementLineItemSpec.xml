@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.MasterAgreementLineItemSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:04:14" hostname="transient" time="0.033">
+<testsuite name="com.streamlinx.fsc.MasterAgreementLineItemSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-09-07T10:09:57" hostname="transient" time="0.049">
   <properties/>
-  <testcase name="It can get the total amount received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.012"/>
-  <testcase name="It can determine if it has been fully received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.011"/>
+  <testcase name="It can get the total amount received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.02"/>
+  <testcase name="It can determine if it has been fully received" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.019"/>
   <testcase name="A MasterAgreementLineItem with no MasterInvoice is Pending" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.0010"/>
-  <testcase name="A MasterAgreementLineItem with a MasterInvoice is not Pending" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.0060"/>
+  <testcase name="A MasterAgreementLineItem with a MasterInvoice is not Pending" classname="com.streamlinx.fsc.MasterAgreementLineItemSpec" time="0.0090"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

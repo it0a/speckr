@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" tests="8" skipped="0" failures="0" errors="0" timestamp="2014-09-08T15:03:38" hostname="transient" time="0.117">
+  <properties/>
+  <testcase name="We can derive the aggregate amount of an invoice" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.019"/>
+  <testcase name="We can derive the aggregate amount of an invoices' MasterAgreementLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.013"/>
+  <testcase name="We can derive the aggregate amount of an invoices' ServiceContractLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.014"/>
+  <testcase name="We can determine if a MasterInvoice contains any new starts" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.011"/>
+  <testcase name="We can determine that a MasterInvoice contains On Demand items" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.0090"/>
+  <testcase name="We can derive the aggregate amount received by an invoice" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.023"/>
+  <testcase name="We can derive the aggregate amount of an invoices' MasterAgreementLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.013"/>
+  <testcase name="We can derive the aggregate amount of an invoices' ServiceContractLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceSpec" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

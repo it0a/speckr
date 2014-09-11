@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.MasterAgreementSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2014-09-08T15:03:35" hostname="transient" time="0.57">
+<testsuite name="com.streamlinx.fsc.MasterAgreementSpec" tests="11" skipped="0" failures="0" errors="0" timestamp="2014-09-11T17:12:08" hostname="transient" time="0.493">
   <properties/>
-  <testcase name="It can get the aggregate amount due" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.414"/>
-  <testcase name="It can determine if it has pending ServiceContractLineItems" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.022"/>
-  <testcase name="It can determine if it has pending MasterAgreementLineItems" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.016"/>
-  <testcase name="It can determine if it has pending items" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.028"/>
-  <testcase name="It can aggregate pending charges/credits" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.037"/>
-  <testcase name="It can aggregate pending ServiceContract Amounts" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.022"/>
-  <testcase name="It can aggregate the pending amount" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.025"/>
+  <testcase name="It can get the aggregate amount due" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.272"/>
+  <testcase name="It can determine if it has pending ServiceContractLineItems" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.018"/>
+  <testcase name="It can determine if it has pending MasterAgreementLineItems" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.013"/>
+  <testcase name="It can determine if it has pending items" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.022"/>
+  <testcase name="It can aggregate pending charges/credits" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.029"/>
+  <testcase name="It can aggregate pending ServiceContract Amounts" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.019"/>
+  <testcase name="It can aggregate the pending amount" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.022"/>
+  <testcase name="It can get the amount due for invoices overdue by zero to thirty days" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.036"/>
+  <testcase name="It can get the amount due for invoices overdue by thirty-one to sixty days" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.02"/>
+  <testcase name="It can get the amount due for invoices overdue by sixty-one to ninety days" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.02"/>
+  <testcase name="It can get the amount due for invoices overdue past ninety-one days" classname="com.streamlinx.fsc.MasterAgreementSpec" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

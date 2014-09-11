@@ -44,6 +44,9 @@ sourceSets {
 }
 
 test {
+    def realExecTime = 0
+    def aggTestExecTime = 0
+    def aggOverheadTime = 0
     outputs.upToDateWhen { false }
     beforeSuite { testDescriptor ->
         if( testDescriptor.parent == null )
@@ -62,6 +65,7 @@ test {
         }
     }
 
+
     afterTest { testDescriptor, testResult -> 
         String testResultString = testDescriptor.name
         out.append("[")
@@ -75,6 +79,7 @@ test {
         }
         out.append("] |")
         int testDuration = testResult.endTime - testResult.startTime
+        realExecTime += testDuration
         if( testDuration > 75 )
         {
             out.withStyle(Style.Failure).format("% 8d", testDuration)        
@@ -94,7 +99,7 @@ test {
             int suiteDuration = testResult.endTime - testResult.startTime
             if ( testDescriptor.parent.parent == null )
             {
-                out.withStyle(Style.UserInput).append("Finished " + testResult.testCount + " tests in " + suiteDuration + "ms (" + testResult.failedTestCount + " failed)")
+                out.withStyle(Style.UserInput).append("Finished " + testResult.testCount + " tests in [real: " + aggTestExecTime + "ms overhead: " + aggOverheadTime + "ms total: " + suiteDuration + "ms] (" + testResult.failedTestCount + " failed)")
                 out.println()
             }
             else
@@ -103,10 +108,13 @@ test {
                 out.withStyle(Style.UserInput).append("DONE")
                 out.append("] |")
                 out.withStyle(Style.ProgressStatus).format("% 8d", suiteDuration)
-                out.append("ms | ")
+                out.append("ms | time in test: ${realExecTime}ms | time elsewhere: ${suiteDuration-realExecTime}ms ")
             }
+            aggTestExecTime += realExecTime
+            aggOverheadTime += suiteDuration-realExecTime
         }
         out.println()
+        realExecTime = 0
     }
 }
 

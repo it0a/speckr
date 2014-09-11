@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2014-09-08T15:03:36" hostname="transient" time="0.0060">
+<testsuite name="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2014-09-11T17:12:09" hostname="transient" time="0.0080">
   <properties/>
   <testcase name="It belongs to a MasterAgreement" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0010"/>
-  <testcase name="It has many MasterAgreementLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0010"/>
-  <testcase name="It has many ServiceContractLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0010"/>
-  <testcase name="It has many CustomerReceipts" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0"/>
+  <testcase name="It has many MasterAgreementLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0"/>
+  <testcase name="It has many ServiceContractLineItems" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0"/>
+  <testcase name="It has many CustomerReceipts" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0010"/>
+  <testcase name="It has many PrintLogs" classname="com.streamlinx.fsc.spec.unit.MasterInvoiceDataStructureSpec" time="0.0010"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

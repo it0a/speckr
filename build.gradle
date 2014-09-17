@@ -39,8 +39,8 @@ sourceSets {
         groovy {
             srcDirs = 
             [
-                '../SmartsToo2/grails-app/domain/com/streamlinx/fsc',
-                '../Blackcomb2/grails-app/domain/com/streamlinx/bcpt'
+                'streamlinx/SmartsToo2/grails-app/domain/com/streamlinx/fsc',
+                'streamlinx/Blackcomb2/grails-app/domain/com/streamlinx/bcpt'
             ]
         }
     }
@@ -49,7 +49,7 @@ sourceSets {
         groovy { 
             srcDirs =
             [
-                '../SmartsToo2/grails-app/services/com/streamlinx/fsc'
+                'streamlinx/SmartsToo2/grails-app/services/com/streamlinx/fsc'
             ]
             include "CustomerReceiptService.groovy"
             compileClasspath += main.output
@@ -60,7 +60,7 @@ sourceSets {
 
     test {
         groovy {
-            srcDirs = ['../SmartsToo2/spec/']
+            srcDirs = ['streamlinx/SmartsToo2/spec/']
         }
         compileClasspath += main.output + services.output
         runtimeClasspath = output + compileClasspath

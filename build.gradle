@@ -60,7 +60,8 @@ sourceSets {
 
     test {
         groovy {
-            srcDirs = ['../streamlinx/SmartsToo2/spec']
+            srcDirs = ['../streamlinx/SmartsToo2/spec',
+                       '../streamlinx/Blackcomb2/spec']
         }
         compileClasspath += main.output + services.output
         runtimeClasspath += output + compileClasspath

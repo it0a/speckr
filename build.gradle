@@ -29,6 +29,7 @@ dependencies {
     compile "commons-collections:commons-collections:3.2.1"
     compile "commons-lang:commons-lang:2.2"
     compile "org.springframework:spring-aop:4.1.0.RELEASE"
+    compile "org.springframework:spring-tx:3.1.0.RELEASE"
     compile "org.aspectj:aspectjweaver:1.6.8"
     testCompile "org.spockframework:spock-core:1.0-groovy-1.8-SNAPSHOT"
 }
@@ -85,7 +86,7 @@ test {
         else
         {
             out.withStyle(Style.Description).append("======================> ")
-            out.withStyle(Style.UserInput).append(testDescriptor.name.toString())
+            out.withStyle(Style.UserInput).append(testDescriptor.name.toString().minus('com.streamlinx.').minus('fsc.'))
             out.println()
         }
     }

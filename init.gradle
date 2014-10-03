@@ -1,0 +1,17 @@
+useLogger(new CustomEventLogger())
+
+class CustomEventLogger extends BuildAdapter implements TaskExecutionListener {
+    private Clock clock
+    public void beforeExecute(Task task) {
+        if( task.name == "compileJava" ){
+            clock = new org.gradle.util.Clock()
+            println("Compiling...")
+        }
+    }
+    public void afterExecute(Task task, TaskState state) {
+        if( task.name == "testClasses" ){
+            println("Compilation finished in ${clock.timeInMs}ms")
+        }
+    }
+    public void buildFinished(BuildResult result){}
+}

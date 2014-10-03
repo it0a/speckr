@@ -135,11 +135,11 @@ test {
                 out.append("] |")
                 out.withStyle(Style.ProgressStatus).format("% 8d", suiteDuration)
                 out.append("ms | time in test: ${realExecTime}ms | time elsewhere: ${suiteDuration-realExecTime}ms ")
+                out.println()
             }
             aggTestExecTime += realExecTime
             aggOverheadTime += suiteDuration-realExecTime
         }
-        out.println()
         realExecTime = 0
     }
 }

@@ -144,3 +144,9 @@ test {
     }
 }
 
+tasks.withType(Test)
+{
+    testLogging{
+        exceptionFormat "full"
+    }
+}

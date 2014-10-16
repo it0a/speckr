@@ -125,7 +125,9 @@ test {
             int suiteDuration = testResult.endTime - testResult.startTime
             if ( testDescriptor.parent.parent == null )
             {
-                out.withStyle(Style.UserInput).append("Finished " + testResult.testCount + " tests in [real: " + aggTestExecTime + "ms overhead: " + aggOverheadTime + "ms total: " + suiteDuration + "ms] (" + testResult.failedTestCount + " failed)")
+                out.withStyle(Style.UserInput).append("Finished " + testResult.testCount + " tests in [real: " + aggTestExecTime + "ms overhead: " + aggOverheadTime + "ms total: " + suiteDuration + "ms] (" + testResult.failedTestCount + " failed) (${aggTestExecTime/testResult.testCount}ms/test)")
+                out.println()
+                out.withStyle(Style.ProgressStatus).append("")
                 out.println()
             }
             else

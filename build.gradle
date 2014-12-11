@@ -41,7 +41,9 @@ sourceSets {
             srcDirs = 
             [
                 '../streamlinx/SmartsToo2/grails-app/domain/com/streamlinx/fsc',
-                '../streamlinx/Blackcomb2/grails-app/domain/com/streamlinx/bcpt'
+                '../streamlinx/Blackcomb2/grails-app/domain/com/streamlinx/bcpt',
+                '../streamlinx/SmartsToo2/src/groovy/com/streamlinx/fsc',
+                '../streamlinx/Blackcomb2/src/groovy/com/streamlinx/bcpt/queries'
             ]
         }
     }
